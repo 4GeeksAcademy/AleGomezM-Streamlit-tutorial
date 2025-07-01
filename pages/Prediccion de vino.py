@@ -15,7 +15,7 @@ st.image('calidad vino.jpg', width=550, use_column_width=False)
 @st.cache_resource
 def load_model():
     base_dir = os.path.dirname(os.path.abspath(__file__))  # Carpeta 'pages'
-    model_path = os.path.join(base_dir, "..", "models", "knn_wine_model.pkl")
+    model_path = os.path.join(base_dir, "models", "knn_wine_model.pkl")
     model_path = os.path.abspath(model_path)  # para debug y seguridad
     print(f"Cargando modelo desde: {model_path}")
     with open(model_path, "rb") as f:
