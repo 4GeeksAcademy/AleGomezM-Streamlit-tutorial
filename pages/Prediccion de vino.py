@@ -14,7 +14,7 @@ st.image('calidad vino.jpg', width=550, use_column_width=False)
 # Cargar modelo y escalador
 @st.cache_resource
 def load_model():
-    base_dir = os.path.dirname(os.path.abspath(__file__))  # Carpeta 'pages'
+    base_dir = os.path.dirname(__file__) if "__file__" in globals() else os.getcwd()
     model_path = os.path.join(base_dir, "models", "knn_wine_model.pkl")
     model_path = os.path.abspath(model_path)  # para debug y seguridad
     st.text(f"Cargando modelo desde: {model_path}")
