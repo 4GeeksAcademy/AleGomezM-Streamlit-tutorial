@@ -1,5 +1,6 @@
-streamlit==1.25.0
-scikit-learn
-streamlit_extras
-keras
-tensorflow
+streamlit==1.46.1
+scikit-learn==1.7.0
+streamlit-extras==0.0.9
+numpy==1.26.4
+joblib==1.4.2
+pandas==2.2.2

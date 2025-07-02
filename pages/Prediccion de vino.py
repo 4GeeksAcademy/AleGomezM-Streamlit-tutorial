@@ -83,5 +83,3 @@ if st.button("Predecir Calidad"):
         st.success(f"🔍 Resultado: Este vino probablemente sea de calidad **{calidad}** 🍷")
     else:
         st.error("Debe completar todas las características.")
-
-
