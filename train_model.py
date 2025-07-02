@@ -35,3 +35,5 @@ model.fit(X_train, y_train)
 # Guardar modelo y scaler
 joblib.dump(model, 'modelo.pkl')
 joblib.dump(scaler, 'scaler.pkl')
+
+print("esto funciona")
